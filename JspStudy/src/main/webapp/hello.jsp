@@ -13,9 +13,8 @@
 	//document.write("str=>"+str);
      System.out.println("str=>"+str);//디버깅할때
      out.println("<h1>"+str+"</h1>");//웹에 출력(서버에서 브라우저로 전송되어서 출력) backend 
-     //<script>
-    //document.write("str=>"+str);//웹에 출력(브라우저에서 출력) frontend
- //</script>   
- %>
+ %> 
+ <hr>
+ str의 값출력=<%=str %>
 </body>
 </html>
