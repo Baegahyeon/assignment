@@ -9,14 +9,13 @@
 <body>
 	<%
   //Scriptlet(스크립트릿=>자바코드를 사용할 수 있도록 만들어주는 영역)
-     String str="홍길동"; 
+     String str="테스트"; 
 	//document.write("str=>"+str);
-     System.out.println("str=>"+str);//디버깅할때
-     out.println("<h1>"+str+"</h1>");//웹에 출력(서버에서 브라우저로 전송되어서 출력) backend 
-     //<script>
-    //document.write("str=>"+str);//웹에 출력(브라우저에서 출력) frontend
- //</script>  
- %>
-	<%=str%>
+	System.out.println("str="+str); 
+	out.println("set="+str);
+  %>
+ <hr>
+ str의 값출력=<%=str %>
+>>>>>>> refs/heads/hotfix
 </body>
 </html>
