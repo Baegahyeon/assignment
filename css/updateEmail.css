@@ -1,0 +1,206 @@
+/* 기본 설정 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 이메일 래퍼 */
+.email-wrapper {
+    width: 600px; 
+    margin: 0 auto;
+}
+
+/* 이메일 내용 */
+#emailContent {
+    width: 90%;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* 제목 헤더 */
+h3 {
+    background-color: #607274;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 5%;
+}
+
+/* 헤더 내 span */
+h3 span {
+    margin-left: auto;
+}
+
+/* 테이블 */
+table {
+    width: 90%; 
+    margin: 20px auto; 
+    border-collapse: collapse; 
+}
+
+/* 테이블 셀 */
+th, td {
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #000; 
+    color: black;
+}
+
+/* 특정 셀 숨기기 */
+tr:nth-child(2) td:nth-child(n+3) {
+    display: none; 
+}
+
+/* 특수 셀 스타일 */
+.special-cell {
+    background-color: #607274; 
+    color: white;
+}
+
+/* 컨테이너 설정 */
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* 이메일 콘텐츠 */
+.email-content {
+    width: 60%;
+    height: 300px; 
+    resize: vertical; 
+}
+
+/* 폰트 컬러 */
+#fontColor {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+
+/* 버튼 컨테이너 */
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* 버튼 스타일 */
+.btn-container button {
+    margin: 0 10px;;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #607274; 
+    color: #fff; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* 버튼 호버 시 스타일 변화 */
+.button-style:hover {
+    background-color: #607274; 
+}
+
+/* 빈 셀 */
+.empty-cell {
+    cursor: pointer;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+/* 빈 셀 체크 시 */
+.empty-cell.checked::before {
+    content: 'O 사용';
+    color: green;
+}
+
+/* 빈 셀 언체크 시 */
+.empty-cell.unchecked::before {
+    content: 'O 미사용';
+    color: red;
+}
+
+/* 타이틀 박스 */
+.title-box {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+/* 메일 제목 입력 */
+#mailTitle {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+/* 기본 버튼 스타일 */
+button {
+    border: none;
+    background-color: white;
+    padding: 0; 
+}
+
+/* 이미지 */
+img {
+    width: 24px; 
+    height: 24px;
+    margin-right: 20%; 
+}
+
+/* 미리보기 버튼 */
+#previewButton {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* 컨트롤 설정 */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 37px; 
+}
+
+/* 미리보기 내용 */
+/* 모달 설정 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* 모달 컨텐츠 */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+/* 모달 닫기 버튼 */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, 
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
