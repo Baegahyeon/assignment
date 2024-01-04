@@ -1,0 +1,106 @@
+body {
+	font-family: Lato;
+	margin: 0;
+	padding: 0;
+	background-color: #cfe2f3;
+}
+
+.container {
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+a {
+	text-align: center;
+	font-size: 1.5em; /* 글자 크기 설정 */
+	margin-bottom: 30px;
+	color: #cfe2f3; /* 텍스트 색상 설정 */
+	text-decoration-line: none;
+}
+
+#news-container {
+	text-align: center;
+	margin: 0 auto; /* 가운데 정렬 */
+	max-width: 100%;
+	overflow-y: auto; /* 세로 스크롤만 허용 */
+	max-height: 100vh; /* 컨테이너가 화면 전체 높이를 넘지 않도록 설정 */
+}
+
+.news-article {
+	display: none;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	margin: 20px auto;
+	max-width: 700px;
+	background-color: #fff;
+}
+
+.categories {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+.categories button, .btn-hover {
+	margin: 5px;
+	padding: 8px 16px; /* 버튼 내부 여백 설정 */
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.buttons-left, .buttons-right {
+	flex-grow: 1;
+	text-align: center;
+}
+
+.buttons-left {
+	margin-right: auto;
+}
+
+.buttons-right {
+	margin-left: auto;
+}
+
+.btn-hover {
+	width: 120px;
+	font-size: 17px;
+	font-weight: 600;
+	color: #fff;
+	cursor: pointer;
+	margin: 5px;
+	height: 35px;
+	text-align: center;
+	border: none;
+	background-size: 300% 100%;
+	border-radius: 20px;
+	transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+	background-position: 100% 0;
+	transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+	outline: none;
+}
+
+.color-8, .color-9 {
+	background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+	box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
+p {
+	overflow: visible; /* 내용이 넘치더라도 숨기지 않고 모두 보이도록 설정 */
+}
